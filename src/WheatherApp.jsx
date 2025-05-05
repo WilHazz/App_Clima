@@ -40,7 +40,7 @@ export const WheatherApp = () => {
 
   return (
     <div className="container">
-      <h1>App Clima</h1>
+      <h1>Aplicación del Clima</h1>
       <form onSubmit={handleSubmit}>
         <input
           type="text"
@@ -60,7 +60,7 @@ export const WheatherApp = () => {
           <p>Humedad: {dataClima.main.humidity}%</p>
           <p>Viento: {dataClima.wind.speed} m/s</p>
           <img
-            src={`https://openweathermap.org/img/wn/${dataClima.weather[0].icon}@2k.png`}
+            src={`https://openweathermap.org/img/wn/${dataClima.weather[0].icon}@2x.png`}
             alt="Icono del clima"
           />
         </div>
